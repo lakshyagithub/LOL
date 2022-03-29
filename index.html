@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Sketch Classification</title>
+  <title>Sketch Identification</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,8 +19,8 @@
 </head>
 
 <body>
-  <center>
-<!-- Modal -->
+<center>
+  <!--Modal-->
 <div id="myModal" class="modal fade">
   <div class="modal-content">
     <div class="modal-header">
@@ -32,30 +32,19 @@
       <img src="sketch1.png">
       <img src="sketch2.png">
     </div>
-
-  </div>
 </div>
-
-<h1>Quick Draw
-<button id="show_sketch" class="btn btn-info" data-toggle="modal" data-target="#myModal">Show Sketch</button>
-  </h1>
-  <hr>
-  <h2>Your drawing: </h2>
-  <br>
-  <h2>Confidence: </h2>
-  <br>
-  <b id="sketch_to_be_drawn" class="red">Pls draw: </b>
-  <br>
-  <p>Score: </p>
-  <br>
-  <p>Timer: </p>
-
-</center> 
-
-
-
-
+</div>
+<!--Modal end-->
+<!--Html start-->
+<h1>Sketch Identification
+  <button id="show_sketch" class="btn btn-info" data-toggle="modal" data-target="#myModal">Show Sketch</button>
+</h1>
+<p id="label">Label: </p><span id="label_ans"></span>
+<p id="confidence">Confidence: </p><span id="confidece_ans"></span>
+<button class="btn btn-danger btn-lg" onclick="clearCanvas();">Clear Canvas</button>
+<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="9">Open console!</marquee>
+</center>
+<!--Html end-->
 <script src="main.js"></script>
 </body>
-
 </html>
