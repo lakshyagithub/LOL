@@ -13,7 +13,7 @@ canvas{
   border-radius: 20px;
   animation-name: example;
   animation-duration: 4s;
-  margin-top: 100px;
+  margin-top: 20%;
   animation-iteration-count: infinite;
 }
 @keyframes example {
